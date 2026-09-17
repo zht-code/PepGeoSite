@@ -1,0 +1,30 @@
+seed: 30
+device: cuda
+data:
+  contact_cutoff: 8.0
+  radii: [6.0, 10.0, 14.0]
+  esm_model: onehot-smoke-only
+  esm_dim: 21
+model:
+  hidden_dim: 32
+  attention_heads: 4
+  graph_layers: 1
+  dropout: 0.05
+loss:
+  positive_weight: 5.773476
+  negative_weight: 0.547407
+  lambda_cluster: 0.10
+  cluster_sigma: 6.0
+  lambda_pair: 0.10
+  pair_temperature: 0.10
+training:
+  batch_size: 2
+  epochs: 1
+  lr: 0.0001
+  weight_decay: 0.00001
+  num_workers: 0
+  grad_accumulation: 1
+  amp: false
+  val_fraction: 0.50
+  early_stop_patience: 2
+  output_dir: outputs/smoke_best_selection

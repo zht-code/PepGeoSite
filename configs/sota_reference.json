@@ -1,0 +1,28 @@
+{
+  "source": "PepGeoSite.pdf Table 1",
+  "interpretation": "Archived benchmark-selected results; descriptive positioning, not untouched external testing.",
+  "TS251": {
+    "nominal_n": 251,
+    "sensitivity": 0.998,
+    "specificity": 0.885,
+    "precision": 0.524,
+    "mcc": 0.680,
+    "auroc": 0.988
+  },
+  "TS639": {
+    "nominal_n": 639,
+    "sensitivity": 0.937,
+    "specificity": 0.974,
+    "precision": 0.389,
+    "mcc": 0.482,
+    "auroc": 0.948
+  },
+  "TS125": {
+    "nominal_n": 125,
+    "sensitivity": 0.943,
+    "specificity": 0.975,
+    "precision": 0.392,
+    "mcc": 0.480,
+    "auroc": 0.958
+  }
+}
